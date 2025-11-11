@@ -114,7 +114,16 @@ conda env list
 
 ---
 
-### Step 4 — Add Additional Packages with Poetry
+### Step 4 — View Poetry Environment Info
+
+Display detailed information about the Poetry environment:
+
+```bash
+poetry env info
+```
+---
+
+### Step 5 — Add Additional Packages with Poetry
 
 Add new dependencies to `pyproject.toml` and install them:
 
@@ -134,7 +143,7 @@ However, in this **hybrid approach (conda + poetry)**, we primarily rely on Poet
 
 ---
 
-### Step 5 — Validate Poetry Configuration
+### Step 6 — Validate Poetry Configuration
 
 Check the integrity of your `pyproject.toml` and `poetry.lock` files:
 
@@ -144,7 +153,7 @@ poetry check
 
 ---
 
-### Step 6 — Check Environment Health
+### Step 7 — Check Environment Health
 
 Run a diagnostic on your Conda environment:
 
@@ -154,22 +163,12 @@ conda doctor -n mlops_env
 
 ---
 
-### Step 7 — Verify Dependency Compatibility
+### Step 8 — Verify Dependency Compatibility
 
 Check for any dependency conflicts within your environment:
 
 ```bash
 pip check
-```
-
----
-
-### Step 8 — View Poetry Environment Info
-
-Display detailed information about the Poetry environment:
-
-```bash
-poetry env info
 ```
 
 ---
@@ -220,4 +219,4 @@ poetry env info
 | **uv**     | Modern Rust-based environment manager | High performance and lockfile-based             |
 | **pip**    | Python package installer              | Simple and lightweight                          |
 
----
+
