@@ -205,3 +205,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+# ======================
+# DATA FILES (LOCAL ONLY)
+# ======================
+
+# Ignore raw datasets
+data_store/raw_csv_data/
+data_store/raw_text_data/
+datastore/
+*.csv
+*.txt
+
+# Optionnel : ignorer les gros fichiers ou outputs ML
+*.pkl
+*.h5
+*.json
+*.parquet
+*.zip
+*.tar.gz
